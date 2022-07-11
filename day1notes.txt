@@ -1,0 +1,43 @@
+JVM---------------Java Virtual Machine.
+
+JRE--------------Java Runtime Environment
+
+JRE--------------JVM+System Libraries.
+
+
+JVM is used to convert the java bytecode to runtime instruction.
+
+
+Scala based interactive shell for spark is called spark-shell.
+Python based interactive shell for spark is called pyspark.
+
+RDD-----------Resilent Distributed Dataset-------------------Fundamental unit of data in spark.
+
+
+worker is the spark node --------- node connected to the master
+
+multiple spark nodes create the cluster.
+
+master is also called cluster manager.
+
+executor is the jvm in the worker node which runs the task.
+
+In each worker node, multiple executors may be running.
+
+
+
+sc is the implicit object to access spark core
+spark is the implicit object to access spark session
+
+master------------local[*]------------it executes the job parallely across multiple cpus in the local machine.
+
+The map() function applies the parameter function to each element in the rdd and returns another rdd.
+
+The flatMap() function is similar to map() except that it flattens the data at last.
+
+The parameter function passed to flatMap returns a collection for each element. So the result will become two dimensional. Since flatMap() flattens
+the data at last, it still remains as one dimensional.
+
+
+
+
